@@ -108,13 +108,15 @@ $($newGameBtn).on('click', function() {
 
 function CheckGuess(_guess) {
   var _arrLetters = randomWord[0].word.split("");
+    console.log(_arrLetters);
 	var _goodGuess = false;
   
   //determine if the user made a good guess
-  $.each(_arrLetters, function(i) {
-    if (_arrLetters[i] === _guess) {
+  _arrLetters.forEach(function(curr, i) {
+    console.log (`got i:${i} and curr as ${curr}`);
+    if (curr === _guess) {
       //show the chosen letter in its proper position (good guess)
-			arrLetters[i].text(_guess);
+	  arrLetters[i].text(_guess);
       _goodGuess = true;
       goodGuess++;
     } 

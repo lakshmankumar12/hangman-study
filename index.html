@@ -4,8 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <title>Page Title</title>
+        <title>Hangman</title>
     </head>
     <body>
         <div class="hangman">
@@ -13,14 +12,14 @@
          <!-- Created with SVG-edit - https://svg-edit.googlecode.com/ -->
          <g id="stand">
           <title>stand</title>
-          <line fill="none" stroke="#ff0000" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="161" y1="25" x2="161" y2="49" id="svg_20"/>
-          <line fill="none" stroke="#ff0000" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="161" y1="26" x2="61" y2="28" id="svg_21"/>
-          <line fill="none" stroke="#ff0000" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="61" y1="26" x2="62" y2="316" id="svg_23"/>
-          <line fill="none" stroke="#ff0000" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="25" y1="315" x2="101" y2="315" id="svg_24"/>
+          <line fill="none" stroke="#ffb142" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="161" y1="25" x2="161" y2="49" id="svg_20"/>
+          <line fill="none" stroke="#ffb142" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="161" y1="26" x2="61" y2="28" id="svg_21"/>
+          <line fill="none" stroke="#ffb142" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="61" y1="26" x2="62" y2="316" id="svg_23"/>
+          <line fill="none" stroke="#ffb142" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" x1="25" y1="315" x2="101" y2="315" id="svg_24"/>
          </g>
          <g id="head" display="none">
           <title>head</title>
-          <ellipse fill="#fcf9f9" stroke="#000000" stroke-width="5" cx="160" cy="77" id="svg_1" rx="25" ry="26"/>
+          <ellipse fill="#2980b9" stroke="#000000" stroke-width="5" cx="160" cy="77" id="svg_1" rx="25" ry="26"/>
           <path fill="#fcf9f9" stroke="#000000" d="m190.36249,36.36404l0,0c0,-2.84449 9.84354,-5.15054 21.98143,-5.15054l9.99023,0l0,0l47.95894,0l89.92035,0c5.8262,0 11.41809,0.54265 15.54169,1.5086c4.12088,0.96596 6.43875,2.276 6.43875,3.64194l0,12.87632l0,0l0,7.72614l0,0c0,2.84438 -9.84213,5.1503 -21.98044,5.1503l-89.92035,0l-62.64943,13.0967l14.69049,-13.0967l-9.99023,0c-12.13789,0 -21.98143,-2.30593 -21.98143,-5.1503l0,0l0,-7.72614l0,0l0,-12.87632z" id="head-callout"/>
           <text fill="#000000" stroke="#000000" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="393.99318" y="49" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.605765700340271,0,0,0.7692307829856873,29.832448644563556,12.461537718772888) " id="head-quote">Awww, snaps!</text>
          </g>
@@ -64,8 +63,7 @@
                     <br/>
                 <br/> 
             <div class="container"> 
-                <span class="">
-              <h4>Correct Guesses</h4>
+                <h4 class="guess-titles">Correct Guesses</h4>
                     <div id="letter0" class="letter"></div>
                     <div id="letter1" class="letter"></div>
                     <div id="letter2" class="letter"></div>
@@ -76,10 +74,8 @@
                     <div id="letter7" class="letter"></div>
                     <div id="letter8" class="letter"></div>
                     <div id="letter9" class="letter"></div>
-                </span>
                 <br/>
                 <br/> 
-                <span class="">        
                 <div id="letter-line0" class="line"></div>
                 <div id="letter-line1" class="line"></div>
                 <div id="letter-line2" class="line"></div>
@@ -94,7 +90,7 @@
             </div>
             <div class="container"> 
                 <span class="">
-                        <h4>Inorrect Guesses</h4>
+                        <h4 class="guess-titles">Inorrect Guesses</h4>
                     <div id="guess0" class="guess"></div>
                     <div id="guess1" class="guess"></div>
                     <div id="guess2" class="guess"></div>
