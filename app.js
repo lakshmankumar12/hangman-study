@@ -227,4 +227,5 @@ var words = [
     { "id":  66, "word": "WARNING" },
     { "id":  67, "word": "WONDER" },
     { "id":  68, "word": "WORRIED" }
+    { "id":  69, "word": "AMULET" }
 ];
